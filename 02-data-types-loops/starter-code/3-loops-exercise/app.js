@@ -12,9 +12,33 @@ BONUS 2: Rewrite your code to use a while loop rather than a for loop. (https://
 BONUS 3: Rewrite your code to use a do/while loop rather than a for loop or while loop. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
 */
 
+/*
 let power = 10;
 let value = 1;
 for(let i =0; i<power; i++ ){
     value=value*2;
     console.log('for i = ' + i + ' value is: '+value);
 }
+*/
+
+/*
+let power = window.prompt('enter the power: ');
+let value = 1;
+for(let i =0; i<power; i++ ){
+    value=value*2;
+    let j=i+1;
+    console.log('for counter i = ' + i + ', 2^' + j + ', is: '+value);
+}
+*/
+
+let power = window.prompt('enter the power: ');
+let value;
+let i=0;
+do{
+    value = Math.pow(2, i);
+    
+    //console.log('for counter i = ' + i + ', 2^' + j + ', is: '+value);
+    console.log('for counter i = ' + i + ', 2^' + i + ', is: '+value);
+    i++;
+    
+} while(i<= power);
