@@ -12,3 +12,9 @@ BONUS 2: Rewrite your code to use a while loop rather than a for loop. (https://
 BONUS 3: Rewrite your code to use a do/while loop rather than a for loop or while loop. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
 */
 
+let power = 10;
+let value = 1;
+for(let i =0; i<power; i++ ){
+    value=value*2;
+    console.log('for i = ' + i + ' value is: '+value);
+}
