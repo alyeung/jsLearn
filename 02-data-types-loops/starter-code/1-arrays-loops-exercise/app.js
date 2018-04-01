@@ -28,7 +28,7 @@ console.log('Question 0: ' + q0);
 
 // Your code here
 let q1 = ['image1.png', 'image2.png', 'image3.png'];
-console.log('Question 1: ', + q1.toString() );
+console.log('Question 1: ' + q1);
 
 /**
  * Question 2
@@ -75,7 +75,13 @@ console.log ('Question 4: ' + q4);
  */
 
  // Your code here
-
+let numbers = [1, 2, 3, 4];
+let q5 = 0;
+numbers.forEach(function(element){
+    q5 += element;
+});
+q5 = q5 /numbers.length;
+console.log('Question 5: '+ q5);
 
 
 /**
@@ -89,6 +95,14 @@ console.log ('Question 4: ' + q4);
  */
 
 // Your code here
+let bigNumbers = [100, 200, 300, 400, 500];
+// Reference: https://stackoverflow.com/questions/12482961/is-it-possible-to-change-values-of-the-array-when-doing-foreach-in-javascript/12482991
+bigNumbers.forEach(function(part, index, array) { 
+    array[index] =  part + 5;
+});
+
+console.log('Question 6: ' + bigNumbers);
+
 
 // ____________________________________________________________________________
 // SECTION 3: Creating a mapped array
@@ -105,5 +119,8 @@ console.log ('Question 4: ' + q4);
  */
 
 // Your code here
+let q7 = numbers.map( function(element){
+    return element + 1;
+});
 
-
+console.log('question 7 answer: ' + q7);
