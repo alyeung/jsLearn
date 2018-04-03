@@ -18,3 +18,29 @@
 
     BONUS 2: Rewrite your code to use a switch statement rather than if and else statements. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 */
+let age = 32;
+
+if (age< 16){
+    console.log('You cannot do much outside of going to school');
+}
+else if(age >=16){
+    console.log('You can drive');
+}
+else if(age>=18){
+    console.log('You can vote');
+}
+else if(age>=21){
+    console.log('You can drink alcohol');
+}
+else if(age>=25){
+    console.log('You can rent a car');
+}
+else if(age>=35){
+    console.log('You can run for president');
+}
+else if(age>=62){
+    console.log('you collect social security benefits');
+}
+else{
+    console.log('should not happen');
+}
