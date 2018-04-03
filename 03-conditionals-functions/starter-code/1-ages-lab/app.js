@@ -18,7 +18,9 @@
 
     BONUS 2: Rewrite your code to use a switch statement rather than if and else statements. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 */
-let age = 18;
+
+
+let age = prompt("What's your age?");
 
 if (age< 16){
     console.log('You cannot do much outside of going to school');
