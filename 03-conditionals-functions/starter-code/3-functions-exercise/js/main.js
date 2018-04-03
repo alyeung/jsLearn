@@ -7,10 +7,12 @@
   // a. Inside the function, log the following value to the console:
   //    new Date()
   //    (Note: This code uses the Date object to fetch the current date and time.)
-
+function logDate(){
+  console.log(new Date());
+}
 
 // 2. Call the function
-
+logDate();
 
 
 // -------------------------------------------------------------------------------
@@ -78,3 +80,11 @@ function makeAVeggiePizza () {
 
 
 makeAVeggiePizza();
+
+function makePizza(t1, t2, t3){
+  console.log('Coming right up! A pizza with ' + t1 + ', ' + t2 + ' and ' + t3 + '.');  
+}
+
+makePizza('cow', 'pig', 'horse');
+makePizza('pepperoni', 'cheese', 'mushrooms');
+makePizza('peppers', 'onions', 'mushrooms');
